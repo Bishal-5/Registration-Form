@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>From</title>
+</head>
+
+<body>
+    <!-- Form -->
+    <div class="form-box">
+        <form class="form" id="form">
+            <span class="title">Welcome</span>
+            <span class="subtitle">Create a Account</span>
+            <div class="form-container">
+                <input type="text" class="input" id="name" required placeholder="Full Name">
+                <input type="text" class="input" id="dob" required onfocus="(this.type='date')"
+                    onblur="if(!this.value) {this.type='text'}" placeholder="Date Of Birth">
+                <input type="email" class="input" id="email" required placeholder="Email">
+                <input type="number" class="input" id="mobile" required placeholder="Mobile">
+            </div>
+            <button type="submit">Submit</button>
+            <p class="viewData" onclick="showLocalStorage()">Show Stored Data</p>
+        </form>
+    </div>
+
+    <!-- Table -->
+    <div class="form-table">
+        <h2 style="margin-top: 0px;margin-bottom: 7px;">Form Data</h2>
+        <table class="table" id="form-data">
+
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Date Of Birth</th>
+                    <th>Email</th>
+                    <th>Mobile No.</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Form Data Store here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
